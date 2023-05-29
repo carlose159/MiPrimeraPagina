@@ -6,8 +6,9 @@
             Primera Pagina WEB
         </title>
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    </head>
         <body>
-            <div class="container-nav">
+            <header class="container-nav">
                 <nav class="navbar" role="navigation">
                   <a href="index.html" class="brand">Pagina CarlosE</a>
                   <ul class="nav-links">
@@ -18,8 +19,12 @@
                   </ul>
                 </nav>
                 <button class="button-menu-toggle">Menu</button>
-            </div>
-            <div class="container">
+            </header>
+            
+            <!-- Division del MAIN para separar todo -->
+
+            <main class="container">
+                <section>
                 <h1>Nuestros servicios</h1>
                 <p>Descubre aquí los servicios que ofrecemos.</p>
                 <ul>
@@ -27,14 +32,19 @@
                     <li>Servicio 2</li>
                     <li>Servicio 3</li>
                 </ul>
-            </div>
+                </section>
+            </main>
+            <footer>
+                
+                <div><button onclick="showAlert()">¡Haz clic en mi!</button></div>
+                <div>
+                <form id="myForm">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                </div>
+            </footer>
             <script src="JS/EjemploJavaScript.js"></script>
-            <button onclick="showAlert()">¡Haz clic en mi!</button>
-            <form id="myForm">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Enviar</button>
-            </form>
         </body>
-    </head>
 </html>
